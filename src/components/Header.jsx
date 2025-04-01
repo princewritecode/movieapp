@@ -4,7 +4,7 @@ const Header = () =>
     return (
         <header className="bg-gray-900 text-white py-4 shadow-md">
             <div className="container mx-auto flex justify-between items-center px-4">
-                <h1 className="text-3xl font-bold">Welcome to Movie App</h1>
+                <Link to={'/'}><h1 className="hover:cursor-pointer text-3xl font-bold">Movietux</h1></Link>
                 <nav>
                     <ul className="flex space-x-4">
                         <li><Link to={'/'} className="hover:text-gray-400 transition">Home</Link></li>

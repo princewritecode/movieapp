@@ -21,7 +21,7 @@ export const MovieInfo = () =>
                 console.log(err);
             }
         };
-        fetchData();
+        fetchData(); ``;
     }, [movieId]);
     return (
         <div className="max-w-4xl mx-auto p-4">
