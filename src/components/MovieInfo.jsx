@@ -4,7 +4,6 @@ export const MovieInfo = () =>
 {
     let [movie, setMovie] = useState({});
     const { movieId } = useParams();
-    console.log(movieId);
     useEffect(() =>
     {
         const fetchData = async () =>
@@ -14,14 +13,13 @@ export const MovieInfo = () =>
                 const data = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=337002c57ce166fd2b4afeb73e61db54`);
                 const response = await data.json();
                 setMovie(response);
-                console.log(response);
             }
             catch (err)
             {
                 console.log(err);
             }
         };
-        fetchData(); ``;
+        fetchData();
     }, [movieId]);
     return (
         <div className="max-w-4xl mx-auto p-4">

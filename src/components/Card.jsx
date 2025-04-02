@@ -2,7 +2,6 @@ import React from 'react';
 
 export const Card = ({ eachMovieProp }) =>
 {
-    console.log(eachMovieProp);
     const { title, overview, vote_average } = eachMovieProp;
 
     return (

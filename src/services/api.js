@@ -13,8 +13,5 @@ const dataFetched = async () =>
         console.error('Error fetching data:', error);
     }
 };
-
 export default dataFetched;
 
-
-//https://api.themoviedb.org/3/movie/762509?api_key=337002c57ce166fd2b4afeb73e61db54
